@@ -14,5 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
   }
 }
