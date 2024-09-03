@@ -3,4 +3,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2f301edcad10c5579328/maintainability)](https://codeclimate.com/github/bodinczov/fullstack-javascript-project-43/maintainability)
 
 ### brain-games guide: brain-even:
-https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8
+[![asciicast](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8.svg)](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8)
