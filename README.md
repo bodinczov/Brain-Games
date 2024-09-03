@@ -4,3 +4,6 @@
 
 ### brain-games guide: brain-even:
 [![asciicast](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8.svg)](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8)
+
+### brain-calc guide:
+[![asciicast](https://asciinema.org/a/r9FGh3RkVCutMH7rzkQV1tg5N.svg)](https://asciinema.org/a/r9FGh3RkVCutMH7rzkQV1tg5N)
