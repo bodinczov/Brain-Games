@@ -14,7 +14,7 @@ for (let i = 0; i < 4; i += 1) {
     console.log(`Congratulations, ${name}!`);
     break;
   };      
-  let randInt = Math.floor((Math.random() * 20) + 1); // +1 чтобы не выпал 0
+  const randInt = Math.round((Math.random() * 20) + 1); // +1 чтобы не выпал 0
   let correctAnswer = '';
   if (randInt % 2 === 0) {
     correctAnswer = 'yes';
