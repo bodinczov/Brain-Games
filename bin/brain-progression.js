@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
 
-var name = readlineSync.question('May I have your name? ');
+let name = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 
 console.log('What number is missing in the progression?');
@@ -29,10 +29,9 @@ for (let i = 0; i < 4; i += 1) {
   const correctAnswer = miss; 
   const question = progressionValues.join(' ');
   console.log(`Question: ${question}`);
-  var answer = parseInt(readlineSync.question('Your answer: '));
+  let answer = parseInt(readlineSync.question('Your answer: '));
   if (answer === correctAnswer) {
     console.log('Correct!');
-    continue;
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     console.log(`Let's try again, ${name}!`);
