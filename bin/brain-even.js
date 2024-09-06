@@ -8,7 +8,7 @@ console.log(`Hello, ${name}!`);
 // При импорте переменной name из cli.js выбрасывается ошибка, что она пустая и всегда будет пустой
 // (код экспорта, импорта переменной был удален)
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".')
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 for (let i = 0; i < 4; i += 1) {
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
