@@ -1,6 +1,6 @@
 export default [
   {
-      ignores: ['node_modules/**', 'eslint.config.js'],
+      ignores: ['node_modules/**', 'eslint.config.js', '/project/code/eslint.config.js'],
       languageOptions: {
           ecmaVersion: 'latest',
           sourceType: 'module'
