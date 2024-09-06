@@ -14,7 +14,7 @@ for (let i = 0; i < 4; i += 1) {
     break;
   };
   const progressionValues = [];
-  const progressionLength = Math.round((Math.random() * 5) + 6); 
+  const progressionLength = Math.round((Math.random() * 5) + 5); 
   const progressionIndex = Math.round((Math.random() * 10) + 1);
   const firstValue = Math.round((Math.random() * 10) + 1);
   const missingValue = Math.round(Math.random() * progressionLength);  
