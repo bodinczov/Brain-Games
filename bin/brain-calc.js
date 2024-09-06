@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
 
-let name = readlineSync.question('May I have your name? ');
+const name = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 // При импорте переменной name из cli.js выбрасывается ошибка, что она пустая и всегда будет пустой
 // (код экспорта, импорта переменной был удален)
@@ -14,13 +14,13 @@ for (let i = 0; i < 4; i += 1) {
     console.log(`Congratulations, ${name}!`);
     break;
   };
-  let actionType = Math.floor(Math.random() * 3);
+  const actionType = Math.floor(Math.random() * 3);
   if (actionType === 0) { //    "+"
-    let randInt = Math.floor((Math.random() * 50) + 1); // +1 чтобы не выпал 0
-    let randInt2 = Math.floor((Math.random() * 50) + 1); 
-    let correctAnswer = randInt + randInt2;
+    const randInt = Math.floor((Math.random() * 50) + 1); // +1 чтобы не выпал 0
+    const randInt2 = Math.floor((Math.random() * 50) + 1); 
+    const correctAnswer = randInt + randInt2;
     console.log(`Question: ${randInt} + ${randInt2}`);
-    var answer = parseInt(readlineSync.question('Your answer: '));
+    const answer = parseInt(readlineSync.question('Your answer: '));
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -38,9 +38,9 @@ for (let i = 0; i < 4; i += 1) {
         //   -----Прочекать------
       }
     }
-    let correctAnswer = randInt - randInt2;
+    const correctAnswer = randInt - randInt2;
     console.log(`Question: ${randInt} - ${randInt2}`);
-    let answer = parseInt(readlineSync.question('Your answer: '));
+    const answer = parseInt(readlineSync.question('Your answer: '));
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -49,11 +49,11 @@ for (let i = 0; i < 4; i += 1) {
       break;
     }
   } else if (actionType === 2) {
-    let randInt = Math.floor((Math.random() * 10) + 1); 
-    let randInt2 = Math.floor((Math.random() * 10) + 1); 
-    let correctAnswer = randInt * randInt2;
+    const randInt = Math.floor((Math.random() * 10) + 1); 
+    const randInt2 = Math.floor((Math.random() * 10) + 1); 
+    const correctAnswer = randInt * randInt2;
     console.log(`Question: ${randInt} * ${randInt2}`);
-    let answer = parseInt(readlineSync.question('Your answer: '));
+    const answer = parseInt(readlineSync.question('Your answer: '));
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
