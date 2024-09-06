@@ -13,3 +13,6 @@
 
 ### brain-progression guide:
 [![asciicast](https://asciinema.org/a/QuHzfhBJ96YFG9qbAo1SDDfuJ.svg)](https://asciinema.org/a/QuHzfhBJ96YFG9qbAo1SDDfuJ)
+
+### brain-prime guide:
+[![asciicast](https://asciinema.org/a/yj1c1Y34HfZdwY9SpU7wIeshK.svg)](https://asciinema.org/a/yj1c1Y34HfZdwY9SpU7wIeshK)
