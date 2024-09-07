@@ -13,7 +13,7 @@ for (let i = 0; i < 4; i += 1) {
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
     break;
-  };      
+  }
   const randInt = Math.round((Math.random() * 50) + 1); // +1 чтобы не выпал 0
   let correctAnswer = '';
   if (randInt === 1 || randInt === 2 || randInt === 3 || randInt === 5 || randInt === 7) {
@@ -38,5 +38,4 @@ for (let i = 0; i < 4; i += 1) {
     console.log(`Let's try again, ${name}!`);
     break;
   }
-};
-
+}

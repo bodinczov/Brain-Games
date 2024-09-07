@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const enterNamePart = () => {
-  const name = readlineSync.question('May I have your name? ');
+  let name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 };
 const gcd = (num1, num2) => {

@@ -14,7 +14,7 @@ for (let i = 0; i < 4; i += 1) {
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
     break;
-  }    
+  }
   const randInt = Math.round((Math.random() * 50) + 1);
   const randInt2 = Math.round((Math.random() * 50) + 1);
   const correctAnswer = gcd(randInt, randInt2);
