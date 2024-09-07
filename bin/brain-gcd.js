@@ -14,13 +14,13 @@ for (let i = 0; i < 4; i += 1) {
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
     break;
-  };      
+  }    
   const randInt = Math.round((Math.random() * 50) + 1);
   const randInt2 = Math.round((Math.random() * 50) + 1);
   const correctAnswer = gcd(randInt, randInt2);
 
   console.log(`Question: ${randInt} ${randInt2}`);
-  const answer = parseInt(readlineSync.question('Your answer: '));
+  const answer = parseInt(readlineSync.question('Your answer: '), 10); // посмотреть как работает
   if (answer === correctAnswer) {
     console.log('Correct!');
   } else {
@@ -28,4 +28,4 @@ for (let i = 0; i < 4; i += 1) {
     console.log(`Let's try again, ${name}!`);
     break;
   }
-};
+}

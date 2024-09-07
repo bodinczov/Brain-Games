@@ -18,7 +18,7 @@ for (let i = 0; i < 4; i += 1) {
   const progressionLength = Math.round((Math.random() * 5) + 5);
   const progressionStep = Math.round((Math.random() * 10) + 1);
   const firstValue = Math.round((Math.random() * 10) + 1);
-  const missingIndex = Math.floor(Math.random() * progressionLength); // Исправлено использование Math.floor
+  const missingIndex = Math.floor(Math.random() * progressionLength);
 
   progressionValues.push(firstValue);
   for (let j = 1; j < progressionLength; j += 1) {
@@ -26,13 +26,13 @@ for (let i = 0; i < 4; i += 1) {
     progressionValues.push(forPush);
   }
 
-  const correctAnswer = progressionValues[missingIndex]; // Значение пропущенного элемента
+  const correctAnswer = progressionValues[missingIndex];
   progressionValues[missingIndex] = '..';
 
   const question = progressionValues.join(' ');
   console.log(`Question: ${question}`);
-  
-  const answer = parseInt(readlineSync.question('Your answer: '), 10); // Добавлено основание системы счисления
+
+  const answer = parseInt(readlineSync.question('Your answer: '), 10);
 
   if (answer === correctAnswer) {
     console.log('Correct!');

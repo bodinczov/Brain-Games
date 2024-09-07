@@ -13,7 +13,7 @@ for (let i = 0; i < 4; i += 1) {
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
     break;
-  };      
+  }
   const randInt = Math.round((Math.random() * 20) + 1); // +1 чтобы не выпал 0
   let correctAnswer = '';
   if (randInt % 2 === 0) {
@@ -30,5 +30,4 @@ for (let i = 0; i < 4; i += 1) {
     console.log(`Let's try again, ${name}!`);
     break;
   }
-};
-
+}
