@@ -20,7 +20,7 @@ for (let i = 0; i < 4; i += 1) {
     const randInt2 = Math.floor((Math.random() * 50) + 1); 
     const correctAnswer = randInt + randInt2;
     console.log(`Question: ${randInt} + ${randInt2}`);
-    const answer = parseInt(readlineSync.question('Your answer: '));
+    const answer = parseInt(readlineSync.question('Your answer: '), 10);
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -29,18 +29,17 @@ for (let i = 0; i < 4; i += 1) {
       break;
     }
   } else if (actionType === 1) {
-    let randInt = Math.floor((Math.random() * 50) + 1); 
-    let randInt2 = Math.floor((Math.random() * 50) + 1); 
+    let randInt = Math.floor((Math.random() * 50) + 1);
+    let randInt2 = Math.floor((Math.random() * 50) + 1);
     if (randInt < randInt2) {
       while (randInt < randInt2) {
         randInt = Math.floor((Math.random() * 50) + 1);
         randInt2 = Math.floor((Math.random() * 50) + 1);
-        //   -----Прочекать------
       }
     }
     const correctAnswer = randInt - randInt2;
     console.log(`Question: ${randInt} - ${randInt2}`);
-    const answer = parseInt(readlineSync.question('Your answer: '));
+    const answer = parseInt(readlineSync.question('Your answer: '), 10);
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -49,11 +48,11 @@ for (let i = 0; i < 4; i += 1) {
       break;
     }
   } else if (actionType === 2) {
-    const randInt = Math.floor((Math.random() * 10) + 1); 
-    const randInt2 = Math.floor((Math.random() * 10) + 1); 
+    const randInt = Math.floor((Math.random() * 10) + 1);
+    const randInt2 = Math.floor((Math.random() * 10) + 1);
     const correctAnswer = randInt * randInt2;
     console.log(`Question: ${randInt} * ${randInt2}`);
-    const answer = parseInt(readlineSync.question('Your answer: '));
+    const answer = parseInt(readlineSync.question('Your answer: '), 10);
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -63,4 +62,3 @@ for (let i = 0; i < 4; i += 1) {
     }
   }
 };
-  
