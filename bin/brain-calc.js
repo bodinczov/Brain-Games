@@ -13,11 +13,11 @@ for (let i = 0; i < 4; i += 1) {
   if (i === 3) {
     console.log(`Congratulations, ${name}!`);
     break;
-  };
+  }
   const actionType = Math.floor(Math.random() * 3);
   if (actionType === 0) { //    "+"
     const randInt = Math.floor((Math.random() * 50) + 1); // +1 чтобы не выпал 0
-    const randInt2 = Math.floor((Math.random() * 50) + 1); 
+    const randInt2 = Math.floor((Math.random() * 50) + 1);
     const correctAnswer = randInt + randInt2;
     console.log(`Question: ${randInt} + ${randInt2}`);
     const answer = parseInt(readlineSync.question('Your answer: '), 10);
@@ -61,4 +61,4 @@ for (let i = 0; i < 4; i += 1) {
       break;
     }
   }
-};
+}

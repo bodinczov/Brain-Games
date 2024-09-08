@@ -5,11 +5,13 @@ const enterNamePart = () => {
   console.log(`Hello, ${name}!`);
 };
 const gcd = (num1, num2) => {
-  while (num2 !== 0) {
-    const temp = num2;
-    num2 = num1 % num2;
-    num1 = temp;
+  let temp2 = num1;
+  let temp3 = num2;
+  while (temp3 !== 0) {
+    const temp = temp3;
+    temp3 = temp2 % temp3;
+    temp2 = temp;
   }
-  return num1;
+  return temp2;
 };
 export { enterNamePart, gcd };
