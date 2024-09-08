@@ -1,6 +1,6 @@
 export default [
   {
-    ignores: ['node_modules/**', '/project/code/eslint.config.js',],
+    ignores: ['node_modules/**', '/project/code/eslint.config.js', 'eslint.config.js'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -9,18 +9,18 @@ export default [
       reportUnusedDisableDirectives: true,
     },
     rules: {
-      quotes: ['error', 'single',],
-      semi: ['error', 'always',],
-      'comma-dangle': ['error', 'always',],
-      indent: ['error', 2,],
+      quotes: ['error', 'single'],
+      semi: ['error', 'always'],
+      'comma-dangle': ['error', 'always'],
+      indent: ['error', 2],
       'no-multi-spaces': 'error',
-      'eol-last': ['error', 'always',],
+      'eol-last': ['error', 'always'],
       'no-var': 'error',
       'prefer-const': 'error',
       'no-unused-vars': 'error',
-      eqeqeq: ['error', 'always',],
+      eqeqeq: ['error', 'always'],
       'no-implicit-globals': 'error',
-      curly: ['error', 'all',],
+      curly: ['error', 'all'],
     },
   },
 ];
