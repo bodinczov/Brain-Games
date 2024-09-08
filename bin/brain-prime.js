@@ -16,7 +16,7 @@ for (let i = 0; i < 4; i += 1) {
   }
   const randInt = Math.round((Math.random() * 50) + 1); // +1 чтобы не выпал 0
   let correctAnswer = '';
-  if (randInt === 1 || randInt === 2 || randInt === 3 || randInt === 5 || randInt === 7) {
+  if (randInt === 2 || randInt === 3 || randInt === 5 || randInt === 7) {
     correctAnswer = 'yes';
   } else if (randInt % 3 === 0) {
     correctAnswer = 'no';
@@ -25,6 +25,8 @@ for (let i = 0; i < 4; i += 1) {
   } else if (randInt % 7 === 0) {
     correctAnswer = 'no';
   } else if (randInt % 2 === 0) {
+    correctAnswer = 'no';
+  } else if (randInt === 1) {
     correctAnswer = 'no';
   } else {
     correctAnswer = 'yes';
