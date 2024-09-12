@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getRandomInRange } from '../src/utils.js';
-import { runEngine } from '../src/index.js';
+import getRandomInRange from '../src/utils.js';
+import runEngine from '../src/index.js';
 
 const isPrime = (num) => {
   if (num < 2) return false;

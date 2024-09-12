@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import { getRandomInRange } from '../src/utils.js';
-import { runEngine } from '../src/index.js';
+import getRandomInRange from '../src/utils.js';
+import runEngine from '../src/index.js';
 
 const rules = 'What is the result of the expression?';
 
 const makeRound = () => {
-  const num1 = getRandomInRange(1, 20);
-  const num2 = getRandomInRange(1, 20);
+  const num1 = getRandomInRange(1, 50);
+  const num2 = getRandomInRange(1, 50);
   const operation = getRandomInRange(0, 2);
   let question;
   let correctAnswer;
@@ -24,6 +24,8 @@ const makeRound = () => {
       question = `${num1} * ${num2}`;
       correctAnswer = (num1 * num2).toString();
       break;
+    default:
+      console.log('Unknown operation');
   }
 
   return [question, correctAnswer];
