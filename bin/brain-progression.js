@@ -1,44 +1,25 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import { getRandomInRange } from '../src/utils.js';
+import { runEngine } from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
+const rules = 'What number is missing in the progression?';
 
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${name}!`);
+const makeRound = () => {
+  const progressionLength = getRandomInRange(5, 10);
+  const step = getRandomInRange(1, 10);
+  const start = getRandomInRange(1, 50);
+  const missingIndex = getRandomInRange(0, progressionLength - 1);
 
-console.log('What number is missing in the progression?');
-
-for (let i = 0; i < 4; i += 1) {
-  if (i === 3) {
-    console.log(`Congratulations, ${name}!`);
-    break;
+  const progression = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(start + step * i);
   }
 
-  const progressionValues = [];
-  const progressionLength = Math.round((Math.random() * 5) + 5);
-  const progressionStep = Math.round((Math.random() * 10) + 1);
-  const firstValue = Math.round((Math.random() * 10) + 1);
-  const missingIndex = Math.floor(Math.random() * progressionLength);
+  const correctAnswer = progression[missingIndex].toString();
+  progression[missingIndex] = '..';
+  const question = progression.join(' ');
 
-  progressionValues.push(firstValue);
-  for (let j = 1; j < progressionLength; j += 1) {
-    const forPush = progressionValues[j - 1] + progressionStep;
-    progressionValues.push(forPush);
-  }
+  return [question, correctAnswer];
+};
 
-  const correctAnswer = progressionValues[missingIndex];
-  progressionValues[missingIndex] = '..';
-
-  const question = progressionValues.join(' ');
-  console.log(`Question: ${question}`);
-
-  const answer = parseInt(readlineSync.question('Your answer: '), 10);
-
-  if (answer === correctAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    console.log(`Let's try again, ${name}!`);
-    break;
-  }
-}
+runEngine(rules, makeRound);

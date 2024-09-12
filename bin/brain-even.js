@@ -1,33 +1,13 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import { getRandomInRange } from '../src/utils.js';
+import { runEngine } from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${name}!`);
-// При импорте переменной name из cli.js выбрасывается ошибка, что она пустая и всегда будет пустой
-// (код экспорта, импорта переменной был удален)
+const makeRound = () => {
+  const number = getRandomInRange(1, 100);
+  const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+  return [`${number}`, correctAnswer];
+};
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-for (let i = 0; i < 4; i += 1) {
-  if (i === 3) {
-    console.log(`Congratulations, ${name}!`);
-    break;
-  }
-  const randInt = Math.round((Math.random() * 20) + 1); // +1 чтобы не выпал 0
-  let correctAnswer = '';
-  if (randInt % 2 === 0) {
-    correctAnswer = 'yes';
-  } else {
-    correctAnswer = 'no';
-  }
-  console.log(`Question: ${randInt}`);
-  const answer = readlineSync.question('Your answer: ');
-  if (answer === correctAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    console.log(`Let's try again, ${name}!`);
-    break;
-  }
-}
+runEngine(rules, makeRound);
