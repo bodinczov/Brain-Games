@@ -2,7 +2,24 @@
 [![Actions Status](https://github.com/bodinczov/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/bodinczov/fullstack-javascript-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2f301edcad10c5579328/maintainability)](https://codeclimate.com/github/bodinczov/fullstack-javascript-project-43/maintainability)
 
-### brain-games guide: brain-even:
+# Brain Games
+
+**Brain Games** – это набор логических мини-игр, которые помогают тренировать мышление и развивать память.
+
+## Установка
+
+1. Клонируйте репозиторий:
+    ```bash
+    git clone git@github.com:bodinczov/fullstack-javascript-project-44.git
+    ```
+2. Установите зависимости:
+    ```bash
+    make install
+    ```
+
+## Гайд по играм:
+
+### brain-even guide:
 [![asciicast](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8.svg)](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8)
 
 ### brain-calc guide:
