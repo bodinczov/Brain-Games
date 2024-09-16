@@ -2,12 +2,13 @@
 import getRandomInRange from '../src/utils.js';
 import runEngine from '../src/index.js';
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isEven = (num) => num % 2 === 0;
 
-const makeRound = () => {
+const generateRound = () => {
   const number = getRandomInRange(1, 100);
-  const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
   return [`${number}`, correctAnswer];
 };
 
-runEngine(rules, makeRound);
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+runEngine(rules, generateRound);

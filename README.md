@@ -4,20 +4,20 @@
 
 # Brain Games
 
-**Brain Games** – это набор логических мини-игр, которые помогают тренировать мышление и развивать память.
+**Brain Games** – is a set of logic mini-games that help train thinking and improve memory.
 
-## Установка
+## How to download
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
     ```bash
     git clone git@github.com:bodinczov/fullstack-javascript-project-44.git
     ```
-2. Установите зависимости:
+2. Install dependencies:
     ```bash
     make install
     ```
 
-## Гайд по играм:
+## Games guides:
 
 ### brain-even guide:
 [![asciicast](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8.svg)](https://asciinema.org/a/8s85028wEwWvLWIvjZ76ZRkU8)

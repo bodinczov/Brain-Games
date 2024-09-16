@@ -10,12 +10,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-const makeRound = () => {
+const generateRound = () => {
   const number = getRandomInRange(1, 100);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return [`${number}`, correctAnswer];
 };
 
-runEngine(rules, makeRound);
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+runEngine(rules, generateRound);

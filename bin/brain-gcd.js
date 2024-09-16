@@ -13,13 +13,13 @@ const gcd = (num1, num2) => {
   return a;
 };
 
-const rules = 'Find the greatest common divisor of given numbers.';
-
-const makeRound = () => {
+const generateRound = () => {
   const num1 = getRandomInRange(1, 100);
   const num2 = getRandomInRange(1, 100);
   const correctAnswer = gcd(num1, num2).toString();
-  return [`${num1} ${num2}`, correctAnswer];
+  const question = `${num1} ${num2}`;
+  return [question, correctAnswer];
 };
 
-runEngine(rules, makeRound);
+const rules = 'Find the greatest common divisor of given numbers.';
+runEngine(rules, generateRound);
