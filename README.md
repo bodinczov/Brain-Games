@@ -9,7 +9,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone git@github.com:bodinczov/fullstack-javascript-project-44.git
+    git clone git@github.com:bodinczov/Brain-Games.git
     ```
 2. Install dependencies:
     ```bash
